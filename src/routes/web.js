@@ -7,7 +7,7 @@ let router = express.Router()
 let initWeRoutes = (app) => {
     router.get("/", homepageController.getHomepage)
     router.get("/webhook", chatBotController.getWebHook)
-    router.post("/wrbhook", chatBotController.postWebHook)
+    router.post("/webhook", chatBotController.postWebHook)
 
     return app.use("/", router);
 }
